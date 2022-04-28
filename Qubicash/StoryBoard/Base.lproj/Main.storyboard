@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5D-dE-0ve">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="Qubicash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="QMx-My-UfW">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QMx-My-UfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G9W-zT-PeM"/>
+                            <constraint firstAttribute="bottom" secondItem="QMx-My-UfW" secondAttribute="bottom" id="LMK-oR-DeJ"/>
+                            <constraint firstItem="QMx-My-UfW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QT5-lL-pnJ"/>
+                            <constraint firstItem="QMx-My-UfW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ake-Tl-Dt5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vjy-sM-04f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="67.633928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ccI-0k-u7n">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="bCG-Bm-8b8" customClass="ViewController" customModule="Qubicash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTP-07-mvi">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D2k-Pu-nI7">
+                                <rect key="frame" x="0.0" y="244" width="428" height="278"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dU6-Fs-mPp">
+                                        <rect key="frame" x="64.333333333333343" y="0.0" width="299.33333333333326" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dU6-Fs-mPp" secondAttribute="height" multiplier="2:1" id="AuK-LL-3aI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FpY-3p-dDK">
+                                        <rect key="frame" x="131.66666666666669" y="228" width="164.66666666666669" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FpY-3p-dDK" firstAttribute="width" secondItem="dU6-Fs-mPp" secondAttribute="width" multiplier="0.55" id="MGP-f5-nHM"/>
+                                    <constraint firstItem="dU6-Fs-mPp" firstAttribute="width" secondItem="D2k-Pu-nI7" secondAttribute="width" multiplier="0.7" id="PLf-Gj-eJ2"/>
+                                    <constraint firstItem="FpY-3p-dDK" firstAttribute="centerX" secondItem="dU6-Fs-mPp" secondAttribute="centerX" id="sfX-BC-Qry"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9rk-QG-58R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D2k-Pu-nI7" firstAttribute="leading" secondItem="9rk-QG-58R" secondAttribute="leading" id="92A-B4-8Wd"/>
+                            <constraint firstItem="D2k-Pu-nI7" firstAttribute="centerY" secondItem="FTP-07-mvi" secondAttribute="centerY" constant="-80" id="FAH-R7-sfK"/>
+                            <constraint firstItem="D2k-Pu-nI7" firstAttribute="height" secondItem="FTP-07-mvi" secondAttribute="height" multiplier="0.3" id="V83-r6-kAZ"/>
+                            <constraint firstItem="9rk-QG-58R" firstAttribute="trailing" secondItem="D2k-Pu-nI7" secondAttribute="trailing" id="qdV-ZJ-VU5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="FpY-3p-dDK" id="3Av-XQ-m2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHD-Qo-agX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781.1594202898552" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9zN-Kx-8wh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="U5D-dE-0ve" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j4u-Og-W5I">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gnd-6v-5hv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75K-aa-24N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashScreen" width="428" height="926"/>
+        <image name="logo" width="634" height="338"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
